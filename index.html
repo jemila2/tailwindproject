@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind project</title>
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+     html {
+      scroll-behavior: smooth;
+    }
+    .trg{
+     justify-content: center; 
+    }
+</style>
+<body class=" sm:gap-40 sm:w-full bg-white-200 w-full h-120 gap-6 justify-center  h-screen ">
+
+    <!-- <div class=" bg-neutral-200 w-200 h-120 gap-6 justify-center "> -->
+
+    
+      <nav class="bg-white  w-full h-10 p-6 z-50  flex justify-between p-6 my-8 sm:bg-white  w-full h-10 p-6 z-50  flex justify-between p-6 my-8">
+        <div class="flex gap-3 pl-8"><p class="text-2xl">Jemila.</p>
+           
+        </div>
+
+        <div class="flex gap-4 ">
+            <a href="#Home" class="hover:text-gray-200">Home</a>
+            <a href="#Project" class="hover:text-gray-200">Project</a>
+            <a href="#About" class="hover:text-gray-200">About</a>
+          
+        </div>
+        <img class="w-20 h-10 pr-8" src="https://up.yimg.com/ib/th?id=OIP.iJ1rvg4plc3edTAU00YfoQHaEW&pid=Api&rs=1&c=1&qlt=95&w=187&h=110" alt="">
+        <!-- <div>7</div> -->
+
+        </nav>
+        <div class="h-10 w-full"></div>
+
+  <!-- Modal (Popup Form) -->
+  <div id="modal" class="fixed bg-white  hidden sm:fixed bg-white  hidden md:fixed bg-white  hidden">
+    <div class="bg-black rounded-lg p-6 w-96 h-200">
+        <h2 class="text-2xl font-semibold mb-4">Get In Touch</h2>
+        
+        <form class="h-400">
+            <label for="name" class="block text-sm font-medium text-white">Name</label>
+            <input type="text" id="name" name="name" class="text-white mt-1 p-2 border border-gray-300 rounded-md w-full mb-4" placeholder="Your name">
+
+            <label for="email" class="block text-sm font-medium text-white">Email</label>
+            <input type="email" id="email" name="email" class="text-white mt-1 p-2 border border-gray-300 rounded-md w-full mb-4" placeholder="Your email">
+
+            <div class="flex justify-between">
+                <button type="submit" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">Submit</button>
+                <button type="button" id="closeModal" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">Close</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+      <div id="Home" class="flex  mt-8 gap-8 w-full gap-20 ">
+        <div class="w-1/2  p-4 h-100 m-8 m-8 text-center md:text-left" >
+            <p>Hey,Im Jemila👋</p>
+            <div class="flex">
+                <h2 class="text-5xl text-bold text-purple-700 font-black">Front</h2>
+                <h2 class="text-5xl font-black">end</h2>
+            </div>
+
+            <div class="dev">
+                <p class="text-5xl font-black">Developer</p>
+            </div>
+            <div class="paragraph my-4 text-gray-600">
+                <p class="text-xl">I'm a frontend developer based  in italy i,ll help you</p>
+                <p class="text-xl"> build beautiful websites users will love.</p>
+            </div>
+          <div class="flex gap-3">
+        
+            <!-- <button class="bg-black text-white font-bold py-2 px-4 rounded">
+                Get In touch
+              </button> -->
+
+              <button id="openModal" class="px-4 py-2 bg-black text-white font-bold py-2 px-4 rounded">
+                Get In touch
+            </button>
+        
+          
+
+           <a href="#Project">   <button class="bg-neutral-300 text-black font-bold py-2 px-4 rounded">
+            browse project
+          </button></a>
+              
+
+           </div>
+        </div>
+        <div class="flex bg-white-600 w-70 h-70 rounded-full p-1 m-8 border-2 border-gray-300 sm:flex bg-white-600 w-70 h-70 rounded-full p-1 m-8 border-2 border-gray-300 md:flex bg-white-600 w-70 h-70 rounded-full p-1 m-8 border-2 border-gray-300  hidden md:block">
+            <img src="c:\Users\USER\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\854D9FCA60B4BD07F9BB215D59EF5561\WhatsApp Image 2025-02-01 at 12.41.15_eee8f7fe.jpg " alt="" class=" w-60 h-45 rounded-full rounded-full m-8 justify-center md:w-60 h-45 rounded-full rounded-full m-8 justify-center sm:w-60 h-45 rounded-full rounded-full m-8 justify-center">
+        </div>
+
+        <div class="flex bg-white-600 w-90 h-50 mt-6 rounded-full border-2 border-gray-300 sm:flex bg-white-600 w-90 h-50 rounded-full border-2 border-gray-300 md:flex bg-white-600 w-90 h-50 rounded-full border-2 border-gray-300 justify-center block md:hidden ">
+            <img src="c:\Users\USER\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\854D9FCA60B4BD07F9BB215D59EF5561\WhatsApp Image 2025-02-01 at 12.41.15_eee8f7fe.jpg " alt="" class=" w-60 h-40 rounded-full rounded-full  justify-center md:w-60 h-40 rounded-full rounded-full  justify-center sm:w-60 h-40 rounded-full rounded-full m-8 justify-center">
+        </div>
+
+
+
+    </div>
+
+        <!-- About me -->
+        <div id="About" class=" h-150 w-full ">
+        <div class="flex">
+            <p class="ml-8 text-5xl font-black">About me</p>
+            <p class="text-5xl font-black text-purple-700">.</p>
+        </div>
+        <p class="ml-8 m-4">Developing beautiful and functional website is what I love doing, that's why I give my all in every new challenge.</p>
+        
+    <div id="" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 p-8">
+
+        
+              <div class="max-w-xs rounded-lg shadow-lg overflow-hidden bg-neutral-200 ">
+                <img class="w-full h-60 object-cover" src="https://tse3.mm.bing.net/th?id=OIP.I4Egl2iT6ILlj8c-jfpVAwHaEm&pid=Api&P=0&h=220/400x300" alt="Product Image" />
+                  
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold text-gray-800">CSS</h2>
+                    <p class="text-gray-600 text-sm mt-2"><p class="mt-4 text-gray-600 italic">"CSS is like the magic dust that turns a plain page into a beautiful experience."</p>
+                    </p>
+                  </div>
+               
+              </div>
+       
+ 
+        <div class="max-w-xs rounded-lg shadow-lg overflow-hidden  bg-neutral-200">
+            <img class="w-full h-60 object-cover" src="https://tse2.mm.bing.net/th?id=OIP.7GgA3ppsiPQmZMitmTb8rAHaHa&pid=Api&P=0&h=220/400x300" alt="Product Image" />
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Node js</h2>
+                <p class="text-gray-600 text-sm mt-2"><p class="mt-4 text-gray-600 italic">"Node.js is like the heartbeat of the web—quietly working behind the scenes, making everything run faster and smoother, one event at a time."</p>
+                </p>
+              </div>
+          
+          </div>
+
+          <div class="max-w-xs rounded-lg shadow-lg overflow-hidden bg-neutral-200  hidden md:block">
+            <img class="w-full h-60 object-cover" src="https://tse2.mm.bing.net/th?id=OIP.AFRsfA165kRjnPzYdk7FAgHaDs&pid=Api&P=0&h=220/400x300" alt="Product Image" />
+            
+            <div class="p-4">
+              <h2 class="text-lg font-semibold text-gray-800">Tailwind</h2>
+              <p class="text-gray-600 text-sm mt-2">
+                "With Tailwind, designing is like painting on a blank canvas—every class is a brushstroke that brings your vision to life."</p>
+          
+            </div>
+          </div>
+
+          <div class="max-w-xs rounded-lg shadow-lg overflow-hidden bg-neutral-200  hidden md:block">
+            <img class="w-full h-60 object-cover" src="https://tse3.mm.bing.net/th?id=OIP.eWUjOCd3NX0YumGQSDNQAwHaEK&pid=Api&P=0&h=220" alt="Product Image" />
+            
+            <div class="p-4">
+              <h2 class="text-lg font-semibold text-gray-800">React</h2>
+              <p class="text-gray-600 text-sm mt-2"><p class="mt-4 text-gray-600 italic">"React is like the Lego set of the web—building dynamic, interactive experiences, one component at a time."</p>
+              </p>
+            </div>
+          </div>
+
+        <!-- Repeat for other projects -->
+    </div>
+    
+
+
+
+        </div>
+
+        <div class="h-110 w-full sm:h-110 w-full mt-20 md:h-110 w-full">
+            <div class="flex">
+                <p class="ml-8 text-5xl font-black">Experiences</p>
+                <p class="text-5xl font-black text-purple-700">.</p>
+            </div>
+            <div class="flex m-8 gap-20">
+                <div class="h-50 w-1">
+                    <div class="bg-purple-600 h-20 w-1"></div>
+                    <div class="bg-gray-400 h-40 w-1"></div>
+                </div>
+                <div class="s">
+                    <p class="mt-3 font-bold text-purple-600">Apple</p>
+                    <p class="mt-5 font-bold text-gray-500">Microsoft</p>
+                    <p class="mt-5 font-bold text-gray-500">Spotify</p>
+                    <p class="mt-5 font-bold text-gray-500">Stripe</p>
+                    <p class="mt-5 font-bold text-gray-500">Webflow</p>
+                </div>
+                <!-- <div class="s"></div> -->
+                <div class="s">
+                   <div class="flex sm:flex md:flex">
+                    <p class="mt-3 font-bold text-black text-2xl">Engineer</p>
+                    <p class="mt-3 font-bold text-purple-600 text-2xl">@ Apple</p>
+                   </div>
+                   <p class="text-0xl text-gray-500 mb-4" >February 2025 presents</p>
+                   <div class="flex">
+                    <p class="mt-3">✔️</p>
+                    <p class="mt-3 font-bold text-gray-500 m-2 d-none d-md-block">Developed and shipped highly interactive web Applications for Apple music using Ember.js</p>
+                   </div>
+
+                   <div class="flex">
+                    <p class="mt-3">✔️</p>
+                    <p class="mt-3 font-bold text-gray-500 m-2 d-none d-md-block">Built and shipped the Apple music Extension withing facebook messanger liveraging third-party and internal APIs</p>
+                   </div>
+
+                   <div class="flex">
+                    <p class="mt-3">✔️</p>
+                    <p class="mt-3 font-bold text-gray-500 m-2 d-none d-md-block">Contributed Extensively to musickit.js, A javasript framework that allows developer to add an apple music player to thire wed apps</p>
+                   </div>
+                   
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="flex mt-20 sm:flex mt-20">
+            <p class="ml-8 text-5xl font-black">Projects</p>
+            <p class="text-5xl font-black text-purple-700">.</p>
+        </div>
+        <div id="Project" class="flex p-8 gap-5">
+            <div class="max-w-xs mx-auto bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                <img src="./image/img1.png" alt="Product Image" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <!-- <h2 class="text-xl font-semibold text-gray-800">Product1</h2> -->
+                  <!-- <p class="mt-2 text-gray-600">A brief description of the product goes here. It's an awesome product that you’ll love!</p> -->
+                  <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800  hidden md:block">Project1</span>
+                   
+                   <a href="https://jemila2.github.io/Logicaloperation/"> <button class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-blue-600">View Project</button></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="max-w-xs mx-auto bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                <img src="./image/img2.png" alt="Product Image" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <!-- <h2 class="text-xl font-semibold text-gray-800">Project</h2> -->
+                  <!-- <p class="mt-2 text-gray-600">A brief description of the product goes here. It's an awesome product that you’ll love!</p> -->
+                  <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800 hidden md:block">Project2</span>
+
+                   <a href="https://jemila2.github.io/myemail/"> <button class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-blue-600">View Product</button></a>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="max-w-xs mx-auto bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                <img src="./image/img6.png" alt="Product Image" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <!-- <h2 class="text-xl font-semibold text-gray-800">Product3</h2> -->
+                  <!-- <p class="mt-2 text-gray-600">A brief description of the product goes here. It's an awesome product that you’ll love!</p> -->
+                  <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800 hidden md:block">Project3</span>
+   
+                    <a href=" https://jemila2.github.io/Qickcheck/"><button class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-blue-600">View Project</button></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="max-w-xs mx-auto bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                <img src="./image/img7.png" alt="Product Image" class="w-full h-56 object-cover">
+                <div class="p-4">
+                  <!-- <h2 class="text-xl font-semibold text-gray-800">Product4</h2> -->
+                  <!-- <p class="mt-2 text-gray-600">A brief description of the product goes here. It's an awesome product that you’ll love!</p> -->
+                  <div class="mt-4 flex items-center justify-between">
+                    <span class="text-lg font-bold text-gray-800 hidden md:block">Project4</span>
+                    <button class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-blue-600">View Project</button>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+
+        <div class="flex">
+            <p class="ml-8 text-5xl font-black">Skills</p>
+            <p class="text-5xl font-black text-purple-700">.</p>
+        </div>
+        <div class="flex w-full h-60 bg-gray-70 p-8 justify-between">
+            <div class="">
+               <p class="font-bold text-1xl"> Web Design</p>
+               <p class="mt-4">UI/Ux Design</p>
+               <p class="mt-3">Responsive Design</p>
+               <p class="mt-3">Wireframing</p>
+               <p class="mt-3">User Research</p>
+             </div>
+
+            <div class="">
+                <p class="font-bold text-1xl">Frontend</p>
+                <p class="mt-4">Javascript</p>
+                <p class="mt-3">React.js</p>
+                <p class="mt-3">Next.js</p>
+                <p class="mt-3">Css3</p>
+            </div>
+
+            <div class="">
+                <p class="font-bold text-1xl">Backend</p>
+                <p class="mt-4">Node.js</p>
+                <p class="mt-3">MondoDB</p>
+                <p class="mt-3">Express.js</p>
+                <p class="mt-3">Vacel</p>
+            </div>
+
+            <div class="">
+                <p class="font-bold text-1xl">Solft skills</p>
+                <p class="mt-4">Effective communication</p>
+                <p class="mt-3">Colaboration</p>
+                <p class="mt-3">Commitment</p>
+                <p class="mt-3">Leadership</p>
+            </div>
+      
+         
+        </div>
+
+
+        <footer class="bg-gray-200 text-black py-8">
+            <div class="container mx-auto px-6">
+              <div class="flex flex-col md:flex-row justify-between">
+                <!-- Left Section -->
+                <div class="mb-4 md:mb-0">
+                  <h3 class="text-black font-bold mb-2">Jemila</h3>
+                  <p class="text-black">© 2025 Jemila. All rights reserved.</p>
+                </div>
+                
+                <!-- Center Section -->
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                  <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                  <a href="#" class="hover:text-gray-400">Terms of Service</a>
+                  <a href="#" class="hover:text-gray-400">FAQ</a>
+                </div>
+          
+                <!-- Right Section -->
+                <div>
+                  <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white">
+              
+
+ 
+
+    <script>
+        // Get the modal and buttons
+        const modal = document.getElementById('modal');
+        const openModalButton = document.getElementById('openModal');
+        const closeModalButton = document.getElementById('closeModal');
+
+        // Open the modal when the button is clicked
+        openModalButton.onclick = () => {
+            modal.classList.remove('hidden');
+        }
+
+        // Close the modal when the close button is clicked
+        closeModalButton.onclick = () => {
+            modal.classList.add('hidden');
+        }
+    </script>
+
+
+</body>
+</html>
